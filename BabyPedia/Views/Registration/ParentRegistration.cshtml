@@ -1,0 +1,116 @@
+﻿@model Parent
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewData["Title"] = "Parent Registration";
+
+    var textBoxClasses = new Dictionary<string, object>()
+    {
+        { "class", "form-control" },
+        // { "readonly", "readonly" },
+    };
+
+}
+
+@if (HttpContextAccessor.HttpContext.Request.Query.TryGetValue("error", out var errorString))
+{
+    <div class="alert alert-danger" role="alert">
+        @errorString
+    </div>
+}
+<div class="text-center container-fluid row text-primary">
+    <h1 class="display-4 long-rounded fw-bold">Registration</h1>
+    <p class="fw-bold text-dark">
+        Register a BabyPedia account
+    </p>
+</div>
+<script>
+      
+        var checkForm = function(form) {
+          if(!form.tos.checked) {
+            alert("Please indicate that you accept the Terms and Conditions");
+            form.tos.focus();
+            return false;
+          }
+          if(!form.personalcheck.checked) {
+            alert("Please indicate that your personal data will be uploaded to the internet");
+            form.personalcheck.focus();
+            return false;
+          }
+          return true;
+        };
+      
+</script>
+<form class="container-fluid row" onsubmit="return checkForm(this)" method="post" action="/register-parent">
+    <div class="col-md-6 col-12">
+        <div class="form-floating mb-3">
+            @Html.TextBoxFor(m => m.UserName, htmlAttributes: textBoxClasses)
+            @Html.LabelFor(x => x.UserName)
+        </div>
+        <div class="form-floating mb-3">
+            @Html.TextBoxFor(m => m.Email, htmlAttributes: textBoxClasses)
+            @Html.LabelFor(x => x.Email)
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="password" name="password">
+            <label for="password">Password</label>
+        </div>
+    </div>
+    <div class="col-md-6 col-12">
+        <div class="form-floating mb-3">
+            @Html.TextBoxFor(m => m.FirstName, htmlAttributes: textBoxClasses)
+            @Html.LabelFor(x => x.FirstName)
+        </div>
+        <div class="form-floating mb-3">
+            @Html.TextBoxFor(m => m.LastName, htmlAttributes: textBoxClasses)
+            @Html.LabelFor(x => x.LastName)
+        </div>
+        <div class="form-floating mb-3">
+            @Html.TextBoxFor(m => m.Address, htmlAttributes: textBoxClasses)
+            @Html.LabelFor(x => x.Address)
+        </div>
+
+        <div class="form-check mb-2">
+            <input name="tos" class="form-check-input" type="checkbox" value="" id="toscheck">
+            <label class="form-check-label" for="toscheck">
+                I agree to the <strong>Terms of Service</strong> and <strong>Privacy Policy</strong>
+            </label>
+        </div>
+        <div class="form-check mb-2">
+            <input name="personalcheck" class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+                I understand that personal data will be uploaded to the internet
+            </label>
+        </div>
+        <div class="flex-column d-flex justify-content-between">
+            <a href="/home/login"  class="mb-2 nav-link">Already have an account?</a>
+            <button class="btn btn-primary">
+                <i class="bi bi-arrow-bar-right"></i> Register
+            </button>
+        </div>
+    </div>
+</form>
+@* *@
+@* <div class="text-center"> *@
+@*     <h1 class="display-4">Register a BabyPedia Account</h1> *@
+@* </div> *@
+@* *@
+@* <div> *@
+@*     Username <input type="text" name="User" id="Username" value=""/> *@
+@* </div> *@
+@* *@
+@* <div> *@
+@*     Email <input type="text" name="Email" id="Email" value=""/> *@
+@* </div> *@
+@* *@
+@* <div> *@
+@*     First Name <input type="text" name="FName" id="FirstName" value=""/> *@
+@* </div> *@
+@* <div> *@
+@*     Last Name <input type="text" name="LName" id="LastName" value=""/> *@
+@* </div> *@
+@* *@
+@* <div> *@
+@*     Address <input type="text" name="Address" id="Address" value=""/> *@
+@* </div> *@
+@* *@
+@* <input type="submit" value="Register"/> *@

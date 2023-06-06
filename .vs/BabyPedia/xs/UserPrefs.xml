@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{AF958682-D9DB-48B2-9C5C-545FE17FDD4A}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="BabyPedia/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml">
+    <Files>
+      <File FileName="BabyPedia/Views/Home/Verification.cshtml" Line="1" Column="1" />
+      <File FileName="BabyPedia/Views/Shared/_Layout.cshtml" Line="62" Column="82" />
+      <File FileName="BabyPedia/Views/Shared/_Layout.cshtml.css" Line="34" Column="21" />
+      <File FileName="BabyPedia/Views/Shared/_LoginPartial.cshtml" Line="1" Column="1" />
+      <File FileName="BabyPedia/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BabyPedia" expanded="True">
+            <Node name="BabyPedia" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Data" expanded="True" />
+                  <Node name="Pages" expanded="True">
+                    <Node name="_ValidationScriptsPartial.cshtml" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Admin" expanded="True" />
+                <Node name="Parent" expanded="True" />
+                <Node name="Pedia" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Utilities" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.BabyPedia PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

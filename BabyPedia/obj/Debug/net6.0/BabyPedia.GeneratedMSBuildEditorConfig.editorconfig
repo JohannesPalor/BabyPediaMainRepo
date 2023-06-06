@@ -1,0 +1,221 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BabyPedia
+build_property.RootNamespace = BabyPedia
+build_property.ProjectDir = /Users/jp/Projects/BabyPedia-master/BabyPedia/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/jp/Projects/BabyPedia-master/BabyPedia
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Admin/AuditLog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vQXVkaXRMb2cuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Admin/NewUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vTmV3VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Admin/SendEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4vU2VuZEVtYWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/AppointmentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L0FwcG9pbnRtZW50RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/AppointmentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L0FwcG9pbnRtZW50TGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/ChildInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L0NoaWxkSW5mb3JtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/CurrentAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L0N1cnJlbnRBcHBvaW50bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/PartneredPedias.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L1BhcnRuZXJlZFBlZGlhcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/PatientRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L1BhdGllbnRSZWNvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/Prescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L1ByZXNjcmlwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/RegisterAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L1JlZ2lzdGVyQXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Parent/VaccineSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFyZW50L1ZhY2NpbmVTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Pedia/AddImmunizationRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGVkaWEvQWRkSW1tdW5pemF0aW9uUmVjb3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Pedia/AppointmentList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGVkaWEvQXBwb2ludG1lbnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Pedia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGVkaWEvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Pedia/PatientRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGVkaWEvUGF0aWVudFJlY29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Pedia/SubscriptionPayment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGVkaWEvU3Vic2NyaXB0aW9uUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Pages/Pedia/VaccineSearch.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGVkaWEvVmFjY2luZVNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/ChildInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DaGlsZEluZm9ybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Gb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/Home.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ib21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/ImmunizationRecord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbW11bml6YXRpb25SZWNvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/ParentCurrentAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9QYXJlbnRDdXJyZW50QXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/PediaChat.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9QZWRpYUNoYXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/PrescribeForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9QcmVzY3JpYmVGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/Prescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9QcmVzY3JpcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/ResetPasswordForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9SZXNldFBhc3N3b3JkRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZXJ2aWNlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/VaccineInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9WYWNjaW5lSW5mb3JtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Home/Verification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9WZXJpZmljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Registration/ParentRegistration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0cmF0aW9uL1BhcmVudFJlZ2lzdHJhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Registration/PediaRegistration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVnaXN0cmF0aW9uL1BlZGlhUmVnaXN0cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Services/OnlineConsultation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydmljZXMvT25saW5lQ29uc3VsdGF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Services/RecordTracking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydmljZXMvUmVjb3JkVHJhY2tpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Services/Vaccination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2VydmljZXMvVmFjY2luYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Welcome/ParentWelcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2VsY29tZS9QYXJlbnRXZWxjb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Welcome/PediaWelcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV2VsY29tZS9QZWRpYVdlbGNvbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jp/Projects/BabyPedia-master/BabyPedia/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2z4nk64983
