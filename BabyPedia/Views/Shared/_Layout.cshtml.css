@@ -25,12 +25,12 @@ a {
 }
 
 .nav-link.text-success {
-    font-size: 18px; 
+    font-size: 22px; 
     font-weight: bold;
 }
 
 .nav-link.text-danger {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
 }
 
