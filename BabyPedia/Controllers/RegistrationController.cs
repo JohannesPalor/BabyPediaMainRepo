@@ -104,6 +104,7 @@ namespace BabyPedia.Controllers
                 existingChild.BirthHeight = child.BirthHeight;
                 existingChild.BirthWeight = child.BirthWeight;
                 existingChild.PlaceOfBirth = child.PlaceOfBirth;
+                existingChild.DateTimeCreated = child.DateTimeCreated;
 
                 _dbContext.Children.Update(child);
             }

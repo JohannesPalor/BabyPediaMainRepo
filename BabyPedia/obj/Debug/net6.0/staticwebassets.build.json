@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wzIR5O4mRsxBojkgMnUiljd9KARW8ae23nbEbOV8wD4=",
+  "Hash": "UiWhQj2449oAD+T8nVBe69tE6hreMxIfSOiJtLKpYWI=",
   "Source": "BabyPedia",
   "BasePath": "_content/BabyPedia",
   "Mode": "Default",
@@ -1205,6 +1205,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/Projecticon.png"
+    },
+    {
+      "Identity": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/SubscriptionOffers.png",
+      "SourceId": "BabyPedia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/",
+      "BasePath": "_content/BabyPedia",
+      "RelativePath": "images/SubscriptionOffers.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/SubscriptionOffers.png"
     },
     {
       "Identity": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/js/signalr/dist/browser/signalr.js",

@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/images/Projecticon.png"
     },
     {
+      "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/SubscriptionOffers.png",
+      "PackagePath": "staticwebassets/images/SubscriptionOffers.png"
+    },
+    {
       "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/about.jpg",
       "PackagePath": "staticwebassets/images/about.jpg"
     },
