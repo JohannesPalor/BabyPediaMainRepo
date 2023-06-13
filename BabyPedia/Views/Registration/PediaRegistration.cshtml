@@ -41,7 +41,7 @@
         <div class="col-md-6 col-12">
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.UserName, htmlAttributes: textBoxClasses)
-                @Html.LabelFor(x => x.UserName)
+                <label for="UserName">User Name</label>
             </div>
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.Email, htmlAttributes: textBoxClasses)
@@ -53,11 +53,11 @@
             </div>
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.FirstName, htmlAttributes: textBoxClasses)
-                @Html.LabelFor(x => x.FirstName)
+                <label for="FirstName">First Name</label>
             </div>
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.LastName, htmlAttributes: textBoxClasses)
-                @Html.LabelFor(x => x.LastName)
+                <label for="LastName">Last Name</label>
             </div>
         </div>
         <div class="col-md-6 col-12">
@@ -68,17 +68,17 @@
 
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.ContactNumber, htmlAttributes: textBoxClasses)
-                @Html.LabelFor(x => x.ContactNumber)
+                <label for="ContactNumber">Contact Number</label>
             </div>
 
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.PrcLicenseNumber, htmlAttributes: textBoxClasses)
-                @Html.LabelFor(x => x.PrcLicenseNumber)
+                <label for="PrcLicenseNumber">Prc License Number</label>
             </div>
 
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.PrcExpiration, htmlAttributes: textBoxClasses)
-                @Html.LabelFor(x => x.PrcExpiration)
+                <label for="PrcExpiration">Prc Expiration</label>
             </div>
 
             <div class="form-check mb-2">
