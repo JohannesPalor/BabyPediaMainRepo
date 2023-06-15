@@ -25,7 +25,9 @@ public class Child
 
     public string? Sex { get; set; }
 
-    
+    [DataType(DataType.Date)]
+    public DateTime DateTimeCreated { get; set; }
+        = DateTime.Now;
 
 
     public List<ImmunizationRecord> ImmunizationRecord { get; set; } =
