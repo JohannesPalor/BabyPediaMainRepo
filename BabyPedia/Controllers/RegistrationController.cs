@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Net.Http;
+using Newtonsoft.Json.Linq;
 
 namespace BabyPedia.Controllers
 {
@@ -67,6 +69,19 @@ namespace BabyPedia.Controllers
                 return Redirect(
                     $"/Registration/ParentRegistration?error={signInResult.Errors.FirstOrDefault().Description}");
             }
+        }
+
+        public async Task<bool> VerifyCaptcha(string response)
+        {
+            var secretKey = "6Lcx37YmAAAAAM1eRra14BXx4cIJJ10XdTBcf_qi"; // Replace with your secret key
+            var httpClient = new HttpClient();
+
+            var responseContent = await httpClient.GetStringAsync($"https://www.google.com/recaptcha/api/siteverify?secret={secretKey}&response={response}");
+            var responseObject = JObject.Parse(responseContent);
+
+            var success = (bool)responseObject.GetValue("success");
+
+            return success;
         }
 
         [Authorize(Roles = "Parent")]
