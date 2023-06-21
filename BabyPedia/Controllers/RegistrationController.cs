@@ -298,6 +298,7 @@ namespace BabyPedia.Controllers
                 }
             }
 
+
             var signInResult = await _userManager.CreateAsync(parent, password);
 
             if (signInResult.Succeeded)
