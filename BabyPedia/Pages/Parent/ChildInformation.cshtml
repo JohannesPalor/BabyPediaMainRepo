@@ -24,32 +24,27 @@
 
 <form class="container-fluid row" action="/register-child" method="post">
     <div class="col-md-6 col-12">
-        <div class="form-floating mb-3">
-            @Html.HiddenFor(m => m.Id, htmlAttributes: textBoxClassesReadonly)
-            @Html.LabelFor(x => x.Id)
-        </div>
+        
         <div class="form-floating mb-3">
             @Html.TextBoxFor(m => m.FirstName, htmlAttributes: textBoxClasses)
-            @Html.LabelFor(x => x.FirstName)
+            <label for="FirstName">First Name</label>
         </div>
 
         <div class="form-floating mb-3">
             @Html.TextBoxFor(m => m.LastName, htmlAttributes: textBoxClasses)
-            @Html.LabelFor(x => x.LastName)
+            <label for="LastName">Last Name</label>
         </div>
 
-<<<<<<< Updated upstream
-        
-=======
+
         <div class="form-floating mb-3">
             @Html.HiddenFor(m => m.DateTimeCreated, htmlAttributes: textBoxClasses)
             @Html.LabelFor(x => x.DateTimeCreated)
         </div>
->>>>>>> Stashed changes
+
 
         <div class="form-floating mb-3">
             @Html.TextBoxFor(m => m.PlaceOfBirth, htmlAttributes: textBoxClasses)
-            @Html.LabelFor(x => x.PlaceOfBirth)
+            <label for="PlaceOfBirth">Place of Birth</label>
         </div>
 
     </div>
