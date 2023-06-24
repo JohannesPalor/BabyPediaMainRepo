@@ -24,7 +24,7 @@ public class Child
     public double? BirthWeight { get; set; }
 
     //ADD CHILD AGE
-    public string? Age { get; set; }
+    //public string? Age { get; set; }
 
     public string? Sex { get; set; }
 
