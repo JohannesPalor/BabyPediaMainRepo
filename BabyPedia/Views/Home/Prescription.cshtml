@@ -20,12 +20,7 @@
                 <div class="d-flex align-items-center">
                 </div>
             </header>
-            <div class="d-flex justify-content-end container-fluid">
-                <p>
-                <span style="font-weight: bold;">Date:</span>
-                @Model.DateTimeCreated.ToString("MMMM d, yyyy").Trim()           
-                </p>
-            </div>
+            
             <div class="d-flex justify-content-between container-fluid">
                 @*<p class="fw-bold">Name: @Model.Parent.FirstName @Model.Parent.LastName</p>*@
                 <p>
@@ -34,8 +29,9 @@
                 </p>
                 <p>
                     <span style="font-weight: bold;">Age:</span>
-                    @Model.Parent.LastName @*@CHANGE TO PATIENT AGE*@
-
+                    @Model.Child.Age @*@CHANGE TO PATIENT AGE*@
+                </p>
+                <p>
                     <span style="font-weight: bold;">Sex:</span>
                     @Model.Child.Sex @*@CHANGE TO PATIENT SEX*@
                 </p>
@@ -49,10 +45,14 @@
             <div class="d-flex justify-content-between container-fluid">
                 @*<p class="fw-bold">CONSULTATION</p>
         <p class="">@DateTime.Parse(Model.AppointmentDate).ToString("MMMM d, yyyy").Trim()</p>*@
-                
+
                 <p>
                     <span style="font-weight: bold;">Address:</span>
                     @Model.Parent.Address @*@CHANGE TO PATIENT ADDRESS*@
+                </p>
+                <p>
+                    <span style="font-weight: bold;">Date:</span>
+                    @Model.DateTimeCreated.ToString("MMMM d, yyyy").Trim()
                 </p>
             </div>
             <main class="w-100 my-5 border-top border-bottom">
@@ -65,10 +65,11 @@
             <footer class="w-100 d-flex justify-content-between p-3">
                 <p></p>
                 <p class="text-center">
-                    Dr. @Model.Pedia.FirstName @Model.Pedia.LastName<br/>
-                    Department of Pediatric<br/>
-                    PRC NO.: @Model.Pedia.PrcLicenseNumber<br/>
-                    PTR NO.: @*@Model.Pedia.PtrNumber*@
+                    Dr. @Model.Pedia.FirstName @Model.Pedia.LastName<br />
+                    Department of Pediatric<br />
+                    PRC NO.: @Model.Pedia.PrcLicenseNumber<br />
+                    PTR NO.: @*@Model.Pedia.PtrNumber*@ <br />
+                    Contact: @Model.Pedia.ContactNumber
                 </p>
             </footer>
         </div>
