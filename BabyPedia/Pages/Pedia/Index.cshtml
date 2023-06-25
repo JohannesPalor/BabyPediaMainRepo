@@ -1,16 +1,30 @@
 ﻿@page
-
+@using Microsoft.AspNetCore.Identity
+@using BabyPedia.Models
+@inject UserManager<IdentityUser> UserManager
 @{
     ViewBag.Title = "Pedia";
     Layout = "_Layout";
 }
 
+@{
+    var actualUser = await UserManager.GetUserAsync(User);
+    var prcExpirationDate = (actualUser as PartneredPedia)?.PrcExpiration;
+    var daysUntilExpiration = prcExpirationDate.HasValue ? (prcExpirationDate.Value - DateTime.Today).Days : 0;
+    var showExpirationMessage = daysUntilExpiration <= 30 && daysUntilExpiration >= 0;
+}
+
 <div class="container-fluid row">
     <div class="col-md-6 col-12">
-        <img src="~/images/home_register.jpg"/>
+        <img src="~/images/home_register.jpg" />
     </div>
     <div class="col-md-6 col-12 my-auto fw-bold d-flex flex-column">
-        @*add notification of PRC*@
+        @if (showExpirationMessage)
+        {
+            <div class="alert alert-warning" role="alert">
+                PRC is about to expire in @daysUntilExpiration days. Please renew it soon.
+            </div>
+        }
         <a href="/pedia/appointmentlist" class="h1 mb-4 row text-decoration-none">Online Appointment</a>
         <a href="/pedia/patientrecord" class="h1 mb-4 row text-decoration-none text-danger">Patient Record</a>
         <a href="/pedia/vaccinesearch" class="h1 mb-4 row text-decoration-none">Vaccine Information</a>
