@@ -29,7 +29,15 @@
 </div>
 <script>
       
-        var checkForm = function(form) {
+    var checkForm = function (form) {
+        var response = grecaptcha.getResponse();
+        if (response.length === 0) {
+            var errorElement = document.getElementById("captchaError");
+            errorElement.innerText = "Please complete the reCAPTCHA.";
+            errorElement.style.display = "block";
+            errorElement.style.color = "red";
+            return false; // Prevent form submission
+        }
           if(!form.tos.checked) {
             alert("Please indicate that you accept the Terms and Conditions");
             form.tos.focus();
@@ -55,7 +63,7 @@
         };
       
 </script>
-<form class="container-fluid row" onsubmit="return checkForm(this)" method="post" action="/register-parent">
+<form id="registrationForm" class="container-fluid row" onsubmit="return checkForm(this)" method="post" action="/register-parent">
     <div class="col-md-6 col-12">
         <div class="form-floating mb-3">
             @Html.TextBoxFor(m => m.UserName, htmlAttributes: textBoxClasses)
@@ -103,9 +111,9 @@
             </button>
         </div>
         <div class="g-recaptcha" data-sitekey="6Lcx37YmAAAAAISNDMnLkBcnEH2hg7dCBMJSRK6d"></div>
-
+        <div id="captchaError" class="text-danger"></div>
     </div>
-    
+
 </form>
 @* *@
 @* <div class="text-center"> *@
