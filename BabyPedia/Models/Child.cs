@@ -23,8 +23,8 @@ public class Child
     [DisplayName("Birth Weight")]
     public double? BirthWeight { get; set; }
 
-    //ADD CHILD AGE
-    //public string? Age { get; set; }
+    
+    public string? Age { get; set; }
 
     public string? Sex { get; set; }
 
