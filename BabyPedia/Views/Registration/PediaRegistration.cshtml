@@ -100,6 +100,18 @@
                 <label for="PrcExpiration">Prc Expiration</label>
             </div>
 
+            <div class="form-group mb-3">
+        <label for="AdditionalID">Additional Valid ID</label>
+                <br />
+        <input type="file" class="form-control-file" id="AdditionalID" name="AdditionalID">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="Signature">Signature</label>
+        <br />
+        <input type="file" class="form-control-file" id="Signature" name="Signature">
+    </div>
+
             @*ADD NEW PTR NUMBER*@
             @*<div class="form-floating mb-3">
             @Html.EditorFor(m => m.PrcExpiration, new { htmlAttributes = new { @class = "form-control", type = "date" } })

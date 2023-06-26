@@ -73,7 +73,7 @@ namespace BabyPedia.Controllers
 
         public async Task<bool> VerifyCaptcha(string response)
         {
-            var secretKey = "6Lcx37YmAAAAAM1eRra14BXx4cIJJ10XdTBcf_qi"; // Replace with your secret key
+            var secretKey = "6Lcx37YmAAAAAM1eRra14BXx4cIJJ10XdTBcf_qi"; 
             var httpClient = new HttpClient();
 
             var responseContent = await httpClient.GetStringAsync($"https://www.google.com/recaptcha/api/siteverify?secret={secretKey}&response={response}");
