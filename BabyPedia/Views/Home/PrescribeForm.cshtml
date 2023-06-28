@@ -55,9 +55,31 @@
             <label for="AppointmentDate">Appointment Date</label>
         </div>
         <div class="form-floating mb-3">
-            @Html.TextAreaFor(m => m.Prescription, new { @class = "form-control", rows = 4 })
+            @Html.TextAreaFor(m => m.Prescription, new { @class = "form-control", rows = "1", placeholder = "Enter prescription", required = "required", oninput = "adjustTextareaHeight(event)" })
             @Html.LabelFor(x => x.Prescription)
         </div>
+
+        <script>function adjustTextareaHeight(event) {
+                var textarea = event.target;
+                textarea.style.height = 'auto'; // Reset the height to auto to recalculate the scroll height
+
+                var newHeight = textarea.scrollHeight;
+                textarea.style.height = newHeight + 'px';
+            }
+
+            document.addEventListener('keydown', function (event) {
+                if (event.keyCode === 13) {
+                    // Enter key is pressed
+                    adjustTextareaHeight(event);
+                }
+            });
+
+            document.addEventListener('input', function (event) {
+                if (event.inputType === 'deleteContentBackward') {
+                    // Items are deleted (Backspace or Delete key is pressed)
+                    adjustTextareaHeight(event);
+                }
+            });</script>
 
         <div class="form-floating mb-3">
             @Html.TextBoxFor(m => m.MeetLink, htmlAttributes: textBoxClasses)
