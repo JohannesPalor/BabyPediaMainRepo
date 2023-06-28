@@ -58,14 +58,17 @@
             <main class="w-100 my-5 border-top border-bottom">
                 <h1 class="text-center m-2">PRESCRIPTION</h1>
             </main>
-            <div class="w-100" style="min-height: 300px">
+            <div class="w-100" style="min-height: 300px; display: flex;">
                 <div class="image-container">
-                    <img src="/images/medical-symbol-rx-signage-template-free-vector.webp" style="max-width: 80px" />
+                    <img src="/images/medicalsymbol.png" style="max-width: 120px" />
                 </div>
-                <div class="prescription-container d-flex align-items-center justify-content-center" style="font-size: 25px;">
-                    @Html.Raw(string.Join("<br>", Model.Prescription.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries)))
+                <div style="margin-left: auto; margin-right: auto;">
+                    <div class="prescription-container d-flex align-items-center justify-content-center" style="font-size: 20px;">
+                        @Html.Raw(string.Join("<br>", Model.Prescription.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries)))
+                    </div>
                 </div>
             </div>
+
 
             <footer class="w-100 d-flex justify-content-between p-3">
                 <p></p>
