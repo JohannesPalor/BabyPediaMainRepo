@@ -16,11 +16,11 @@
     <div class="container-fluid row">
         <div id="prescription" class="container bg-light d-flex flex-column align-items-center" style="max-width: 500px">
             <header class="w-100 d-flex justify-content-center p-3">
-                <img class="img-fluid" src="~/images/logo.jpg" alt="Hospital Logo"/>
+                <img class="img-fluid" src="~/images/logo.jpg" alt="Hospital Logo" />
                 <div class="d-flex align-items-center">
                 </div>
             </header>
-            
+
             <div class="d-flex justify-content-between container-fluid">
                 @*<p class="fw-bold">Name: @Model.Parent.FirstName @Model.Parent.LastName</p>*@
                 <p>
@@ -36,15 +36,15 @@
                     @Model.Child.Sex @*@CHANGE TO PATIENT SEX*@
                 </p>
                 @*<p>
-                    <span style="font-weight: bold;">Date:</span>
-                    @DateTime.Parse(Model.AppointmentDate).ToString("MMMM d, yyyy").Trim()
-                </p>*@
+                <span style="font-weight: bold;">Date:</span>
+                @DateTime.Parse(Model.AppointmentDate).ToString("MMMM d, yyyy").Trim()
+            </p>*@
 
                 @*<p class="">@Model.DateTimeCreated.ToString("MMMM d, yyyy").Trim()</p>*@
             </div>
             <div class="d-flex justify-content-between container-fluid">
                 @*<p class="fw-bold">CONSULTATION</p>
-        <p class="">@DateTime.Parse(Model.AppointmentDate).ToString("MMMM d, yyyy").Trim()</p>*@
+            <p class="">@DateTime.Parse(Model.AppointmentDate).ToString("MMMM d, yyyy").Trim()</p>*@
 
                 <p>
                     <span style="font-weight: bold;">Address:</span>
@@ -59,9 +59,14 @@
                 <h1 class="text-center m-2">PRESCRIPTION</h1>
             </main>
             <div class="w-100" style="min-height: 300px">
-                <img src="/images/medical-symbol-rx-signage-template-free-vector.webp" style="max-width: 150px"/>
-                @Model.Prescription
+                <div class="image-container">
+                    <img src="/images/medical-symbol-rx-signage-template-free-vector.webp" style="max-width: 80px" />
+                </div>
+                <div class="prescription-container d-flex align-items-center justify-content-center" style="font-size: 25px;">
+                    @Html.Raw(string.Join("<br>", Model.Prescription.Split(new[] { '\n' }, StringSplitOptions.RemoveEmptyEntries)))
+                </div>
             </div>
+
             <footer class="w-100 d-flex justify-content-between p-3">
                 <p></p>
                 <p class="text-center">
