@@ -69,6 +69,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult DataPrivacy()
+    {
+        return View();
+    }
+
     public async Task<string> GetAccessToken()
     {
         HttpClient client = new HttpClient();
