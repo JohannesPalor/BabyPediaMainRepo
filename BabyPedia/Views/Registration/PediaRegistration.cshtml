@@ -24,6 +24,25 @@
       
     var checkForm = function (form) {
         var response = grecaptcha.getResponse();
+        var email = form.Email.value.trim();
+        var username = form.UserName.value.trim();
+        var firstname = form.FirstName.value.trim();
+        var lastname = form.LastName.value.trim();
+        var address = form.Address.value.trim();
+        var contactnumber = form.ContactNumber.value.trim();
+        var prclicensenumber = form.PrcLicenseNumber.value.trim();
+        var prcexpiration = form.PrcExpiration.value.trim();
+
+        if (email === "") showError("EmailError", "Email cannot be left blank.");
+        if (username === "") showError("userNameError", "Username cannot be left blank.");
+        if (firstname === "") showError("FirstNameError", "First Name cannot be left blank.");
+        if (lastname === "") showError("LastNameError", "Last Name cannot be left blank.");
+        if (address === "") showError("AddressError", "Address cannot be left blank.");
+        if (contactnumber === "") showError("ContactError", "Contact Number cannot be left blank.");
+        if (prclicensenumber === "") showError("PrcLnError", "PRC License Number cannot be left blank.");
+        if (prcexpiration === "") showError("PrcExpError", "PRC Expiration Date cannot be left blank.");
+
+
         if (response.length === 0) {
             var errorElement = document.getElementById("captchaError");
             errorElement.innerText = "Please complete the reCAPTCHA.";
@@ -36,6 +55,15 @@
             form.personal.focus();
             return false;
           }
+
+        function showError(elementId, errorMessage) {
+            var errorElement = document.getElementById(elementId);
+            errorElement.innerText = errorMessage;
+            errorElement.style.display = "block";
+            errorElement.style.color = "red";
+
+        }
+
             var username = form.UserName.value;
             // Check if username is in email format
             var emailRegex = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
@@ -61,10 +89,12 @@
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.UserName, htmlAttributes: textBoxClasses)
                 <label for="UserName">User Name</label>
+                <div id="userNameError" class="text-danger"></div>
             </div>
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.Email, htmlAttributes: textBoxClasses)
                 @Html.LabelFor(x => x.Email)
+                <div id="EmailError" class="text-danger"></div>
             </div>
             <div class="form-floating mb-3">
                 <input type="password" class="form-control" id="password" name="password">
@@ -73,44 +103,54 @@
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.FirstName, htmlAttributes: textBoxClasses)
                 <label for="FirstName">First Name</label>
+                <div id="FirstNameError" class="text-danger"></div>
             </div>
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.LastName, htmlAttributes: textBoxClasses)
-                <label for="LastName">Last Name</label>
+                <div id="LastNameError" class="text-danger"></div>
             </div>
         </div>
         <div class="col-md-6 col-12">
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.Address, htmlAttributes: textBoxClasses)
                 @Html.LabelFor(x => x.Address)
+                <div id="AddressError" class="text-danger"></div>
             </div>
 
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.ContactNumber, htmlAttributes: textBoxClasses)
                 <label for="ContactNumber">Contact Number</label>
+                <div id="ContactError" class="text-danger"></div>
             </div>
 
             <div class="form-floating mb-3">
                 @Html.TextBoxFor(m => m.PrcLicenseNumber, htmlAttributes: textBoxClasses)
                 <label for="PrcLicenseNumber">Prc License Number</label>
+                <div id="PrcLnError" class="text-danger"></div>
             </div>
 
             <div class="form-floating mb-3">
                 @Html.EditorFor(m => m.PrcExpiration, new { htmlAttributes = new { @class = "form-control", type = "date" } })
                 <label for="PrcExpiration">Prc Expiration</label>
+                <div id="PrcExpError" class="text-danger"></div>
             </div>
 
-            <div class="form-group mb-3">
-        <label for="AdditionalID">Additional Valid ID</label>
-                <br />
-        <input type="file" class="form-control-file" id="AdditionalID" name="AdditionalID">
-    </div>
-
-    <div class="form-group mb-3">
-        <label for="Signature">Signature</label>
-        <br />
-        <input type="file" class="form-control-file" id="Signature" name="Signature">
-    </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="AdditionalID">Additional Valid ID</label>
+                        <br>
+                        <input type="file" class="form-control-file" id="AdditionalID" name="AdditionalID">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="Signature">Signature</label>
+                        <br>
+                        <input type="file" class="form-control-file" id="Signature" name="Signature">
+                    </div>
+                </div>
+            </div>
 
             @*ADD NEW PTR NUMBER*@
             @*<div class="form-floating mb-3">
