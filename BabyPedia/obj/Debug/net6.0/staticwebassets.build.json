@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UiWhQj2449oAD+T8nVBe69tE6hreMxIfSOiJtLKpYWI=",
+  "Hash": "Grzyx1GHWt37H87GE3AFx1FL/u2B/XSxWo318B7Wb08=",
   "Source": "BabyPedia",
   "BasePath": "_content/BabyPedia",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "/Users/jp/Projects/BabyPedia-master/BabyPedia/obj/Debug/net6.0/scopedcss/projectbundle/BabyPedia.bundle.scp.css"
     },
     {
+      "Identity": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/.DS_Store",
+      "SourceId": "BabyPedia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/",
+      "BasePath": "_content/BabyPedia",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
       "Identity": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/css/site.css",
       "SourceId": "BabyPedia",
       "SourceType": "Discovered",
@@ -1173,6 +1190,23 @@
       "OriginalItemSpec": "wwwroot/images/logo.jpg"
     },
     {
+      "Identity": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/Logo.png",
+      "SourceId": "BabyPedia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/",
+      "BasePath": "_content/BabyPedia",
+      "RelativePath": "images/Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/Logo.png"
+    },
+    {
       "Identity": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/medical-symbol-rx-signage-template-free-vector.webp",
       "SourceId": "BabyPedia",
       "SourceType": "Discovered",
@@ -1188,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/medical-symbol-rx-signage-template-free-vector.webp"
+    },
+    {
+      "Identity": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/medicalsymbol.png",
+      "SourceId": "BabyPedia",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/",
+      "BasePath": "_content/BabyPedia",
+      "RelativePath": "images/medicalsymbol.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/medicalsymbol.png"
     },
     {
       "Identity": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/Projecticon.png",

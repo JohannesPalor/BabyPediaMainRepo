@@ -1,4 +1,6 @@
-﻿namespace BabyPedia.Models;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BabyPedia.Models;
 
 public class Appointment
 {
@@ -15,6 +17,7 @@ public class Appointment
     public string? Prescription { get; set; }
 
     public AppointmentPayment Payment { get; set; }
+
     public AppointmentType AppointmentType { get; set; }
 
     public DateTime DateTimeCreated { get; set; } = DateTime.Today;
@@ -24,4 +27,12 @@ public class Appointment
     public Child Child { get; set; }
 
     public PartneredPedia Pedia { get; set; }
+
+    //added columns
+    [MaxLength(255)]
+    public string? Status { get; set; }
+
+    [MaxLength(100)]
+    public string? Accepted{ get; set; }
+
 }

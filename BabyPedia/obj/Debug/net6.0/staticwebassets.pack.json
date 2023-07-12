@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/BabyPedia.bundle.scp.css"
     },
     {
+      "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/UsersList.html",
       "PackagePath": "staticwebassets/UsersList.html"
     },
@@ -19,6 +23,10 @@
     {
       "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/327861143_666198605252374_4836121851101944564_n.jpg",
       "PackagePath": "staticwebassets/images/327861143_666198605252374_4836121851101944564_n.jpg"
+    },
+    {
+      "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/Logo.png",
+      "PackagePath": "staticwebassets/images/Logo.png"
     },
     {
       "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/Projecticon.png",
@@ -43,6 +51,10 @@
     {
       "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/medical-symbol-rx-signage-template-free-vector.webp",
       "PackagePath": "staticwebassets/images/medical-symbol-rx-signage-template-free-vector.webp"
+    },
+    {
+      "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/images/medicalsymbol.png",
+      "PackagePath": "staticwebassets/images/medicalsymbol.png"
     },
     {
       "Id": "/Users/jp/Projects/BabyPedia-master/BabyPedia/wwwroot/js/signalr/dist/browser/signalr.js",
