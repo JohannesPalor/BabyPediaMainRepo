@@ -74,6 +74,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Payment()
+    {
+        return View();
+    }
+
     public async Task<string> GetAccessToken()
     {
         HttpClient client = new HttpClient();
@@ -410,7 +415,7 @@ public async Task<IActionResult> DeleteAppointment(long id)
     }
 
 
-    [Authorize(Roles = "Pedia,Admin")]
+    [Authorize(Roles = "Pedia,Parent")]
     [HttpGet("/vaccines/{id}")]
     public async Task<IActionResult> VaccineInformation(long id)
     {
