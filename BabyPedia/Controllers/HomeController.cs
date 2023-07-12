@@ -306,8 +306,41 @@ public class HomeController : Controller
             .FirstOrDefaultAsync(x => x.Id == id));
     }
 
+    [Authorize(Roles = "Pedia,Parent")]
+[HttpGet("/appointment/delete/{id}")]
+public async Task<IActionResult> DeleteAppointment(long id)
+{
+    var appointment = await _babyPediaContext.Appointments.FindAsync(id);
+    if (appointment == null)
+    {
+        return NotFound();
+    }
 
-    [Authorize(Roles = "Admin")]
+    _babyPediaContext.Appointments.Remove(appointment);
+    await _babyPediaContext.SaveChangesAsync();
+
+    return Redirect("/parent/appointmentlist?message=Appointment has been cancelled!"); 
+}
+
+    [Authorize(Roles = "Pedia,Parent")]
+    [HttpGet("/pediaappointment/delete/{id}")]
+    public async Task<IActionResult> DeleteAppointmentPedia(long id)
+    {
+        var appointment = await _babyPediaContext.Appointments.FindAsync(id);
+        if (appointment == null)
+        {
+            return NotFound();
+        }
+
+        _babyPediaContext.Appointments.Remove(appointment);
+        await _babyPediaContext.SaveChangesAsync();
+
+        return Redirect("/pedia/appointmentlist?message=Appointment has been cancelled!");
+
+    }
+
+
+        [Authorize(Roles = "Admin")]
     [HttpGet("/verify/{id}")]
     public async Task<IActionResult> Verification(string id)
     {

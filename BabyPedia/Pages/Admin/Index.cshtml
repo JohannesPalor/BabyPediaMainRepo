@@ -91,21 +91,32 @@
                     <td class="text-center">
                         @if (dynamicUser is PartneredPedia)
                         {
-                            <button class="btn mx-auto btn-@(dynamicUser.IsVerified ? "success" : "danger")">
-                                @(dynamicUser.IsVerified ? "Verified" : "Not Verified")
-                            </button>
+                            <span class="d-inline-block w-100">
+                                <span class="badge bg-@(dynamicUser.IsVerified ? "success" : "danger")">
+                                    @(dynamicUser.IsVerified ? "Verified" : "Not Verified")
+                                </span>
+                            </span>
                         }
                     </td>
+
+
+
                     <td class="text-center">
                         @if (dynamicUser is PartneredPedia partneredPedia2)
                         {
-                            <a href="/verify/@partneredPedia2.Id" class="btn mx-auto me-2 mb-2 btn-@(!dynamicUser.IsVerified ? "success" : "danger")">
-                                @(!dynamicUser.IsVerified ? "Verify" : "Unverify")
-                            </a>
+                            <div class="d-flex flex-column">
+                                <a href="/verify/@partneredPedia2.Id" class="btn btn-sm mx-auto mb-2 btn-@(!dynamicUser.IsVerified ? "success" : "danger")" style="width: 100%">
+                                    @(!dynamicUser.IsVerified ? "Verify" : "Unverify")
+                                </a>
+                            </div>
                         }
-
-                        <a href="/user/delete/@user.Id" class="btn  me-2 mb-2  text-light" style="background-color: #0B82D1 !important;">Delete User</a>
                     </td>
+                    <td class="text-center">
+                        <a href="/user/delete/@user.Id" class="btn btn-sm mb-2 text-light" style="background-color: #0B82D1 !important; width: 100%">Delete User</a>
+                    </td>
+
+
+
                 </tr>
             }
             </tbody>

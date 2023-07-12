@@ -5,6 +5,7 @@
 @model BabyPedia.Pages.Parent.AppointmentList
 @inject BabyPediaContext DbContext
 @inject UserManager<IdentityUser> UserManager
+@inject IHttpContextAccessor ContextAccessor
 
 @{
     var currentId = UserManager.GetUserId(User);
@@ -18,10 +19,18 @@
         .Include(x => x.Appointments)
         .ThenInclude(x => x.Payment)
         .FirstOrDefaultAsync(x => x.Id == currentId);
+    var message = ContextAccessor.HttpContext.Request.Query["message"];
 
     ViewData["Registered"] = true;
     ViewData["Title"] = "Appointment List";
     Layout = "_Layout";
+}
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert alert-success" role="alert">
+        @message
+    </div>
 }
 
 
@@ -63,7 +72,7 @@
     @*     <a href="" class="btn-primary btn m-2">View Prescription</a> *@
     @* </div> *@
 }
-@if (currentParent is {})
+@if (currentParent is { })
 {
     <div class="container mt-4">
         <h1 class="text-center">
@@ -77,29 +86,31 @@
         </div>
         <table class="table m-2">
             <thead>
-            <tr>
-                <th scope="col">Pediatrician</th>
-                <th scope="col">Child's Name</th>
-                <th scope="col">Appointment Type</th>
-                <th scope="col">Date and Time</th>
-                <th scope="col">Status</th>
-                <th scope="col">Actions</th>
-            </tr>
+                <tr>
+                    <th scope="col">Pediatrician</th>
+                    <th scope="col">Child's Name</th>
+                    <th scope="col">Appointment Type</th>
+                    <th scope="col">Date and Time</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Actions</th>
+                </tr>
             </thead>
             <tbody>
-            @foreach (var i in currentParent.Appointments)
-            {
-                <tr>
-                    <th scope="row">@i.Pedia.FirstName @i.Pedia.LastName</th>
-                    <td>@i.Child.FirstName @i.Child.LastName </td>
-                    <td>@i.AppointmentType.Name</td>
-                    <td>@i.AppointmentDate</td>
-                    <td class="@(!string.IsNullOrWhiteSpace(i.Prescription) ? "fw-bold text-success" : "")">@i.Payment.Status@(string.IsNullOrWhiteSpace(i.Prescription) ? "" : ", Prescribed!")</td>
-                    <td>
-                        <a href="/parent/currentappointment/@i.Id" class="btn btn-primary"><i class="bi bi-eye-fill"></i> View Appointment</a>
-                    </td>
-                </tr>
-            }
+                @foreach (var i in currentParent.Appointments)
+                {
+                    <tr>
+                        <th scope="row">@i.Pedia.FirstName @i.Pedia.LastName</th>
+                        <td>@i.Child.FirstName @i.Child.LastName </td>
+                        <td>@i.AppointmentType.Name</td>
+                        <td>@i.AppointmentDate</td>
+                        <td class="@(!string.IsNullOrWhiteSpace(i.Prescription) ? "fw-bold text-success" : "")">@i.Payment.Status@(string.IsNullOrWhiteSpace(i.Prescription) ? "" : ", Prescribed!")</td>
+                        <td>
+                            <a href="/parent/currentappointment/@i.Id" class="btn btn-primary"><i class="bi bi-eye-fill"></i> View Appointment</a>
+                            <a href="/appointment/delete/@i.Id" class="btn btn-danger">Cancel Appointment</a>
+                        </td>
+                        
+                    </tr>
+                }
             </tbody>
         </table>
     </div>

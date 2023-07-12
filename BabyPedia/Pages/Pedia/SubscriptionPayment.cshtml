@@ -28,26 +28,35 @@
             Subscription Payment for Pediatricians
         </p>
     </h1>
-    <img src="~/images/SubscriptionOffers.png"/>
+    <img src="~/images/SubscriptionOffers.png" />
+
+    <div class="mb-3">
+        <select class="form-select" name="subscriptionType">
+            <option selected>Subscription Type</option>
+            <option value="Monthly">Monthly (₱800.00)</option>
+            <option value="Annually">Annually (₱9,000.00)</option>
+        </select>
+    </div>
+
     @if (currentDoctor.PediaPayments.Any())
     {
         <table class="table m-2 table-borderless">
             <thead>
-            <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Date Paid</th>
-                <th scope="col">Paid</th>
-            </tr>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Date Paid</th>
+                    <th scope="col">Paid</th>
+                </tr>
             </thead>
             <tbody>
-            @foreach (var i in currentDoctor.PediaPayments)
-            {
-                <tr>
-                    <th scope="row" class="">@i.Id</th>
-                    <th scope="row" class="">@i.DatePaid</th>
-                    <th scope="row" class="">$@i.Payment</th>
-                </tr>
-            }
+                @foreach (var i in currentDoctor.PediaPayments)
+                {
+                    <tr>
+                        <th scope="row" class="">@i.Id</th>
+                        <th scope="row" class="">@i.DatePaid</th>
+                        <th scope="row" class="">₱@i.Payment</th>
+                    </tr>
+                }
             </tbody>
         </table>
     }
@@ -71,7 +80,7 @@
     @* </div> *@
     @if (havePaidThisMonth)
     {
-        
+
         <div class="alert alert-info" role="alert">
             You've already paid for this month!
         </div>
@@ -83,35 +92,42 @@
                 <h2>Pay via Paypal!</h2>
             </div>
         </div>
-        <script>
-              paypal.Buttons({
-                createOrder: function(data, actions) {
-                  return actions.order.create({
-                    purchase_units: [{
-                      amount: {
-                        value: '20.00'
-                      }
-                    }]
-                  });
+        <script>paypal.Buttons({
+                createOrder: function (data, actions) {
+                    var amount = '0.00'; 
+                    var selectedOption = document.querySelector('select[name="subscriptionType"]').value;
+        if (selectedOption === 'Monthly') {
+                        amount = '800.00';
+                    } else if (selectedOption === 'Annually') {
+                        amount = '9000.00';
+                    }
+
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: amount
+                            }
+                        }]
+                    });
                 },
-                onApprove: function(data, actions) {
-                  return actions.order.capture().then(function(details) {
-                    // Send the details to your server for verification
-                    var xhr = new XMLHttpRequest();
-                    xhr.open("POST", "/api/verifyPayment");
-                    xhr.setRequestHeader("Authorization", "Bearer <YOUR_ACCESS_TOKEN>");
-                    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-                    xhr.onload = function() {
-                      if (xhr.status === 200) {
-                          location.reload()
-                      } else {
-                        alert("Payment verification failed!");
-                      }
-                    };
-                    xhr.send(JSON.stringify(details));
-                  });
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                        // Send the details to your server for verification
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", "/api/verifyPayment");
+                        xhr.setRequestHeader("Authorization", "Bearer <YOUR_ACCESS_TOKEN>");
+                        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                        xhr.onload = function () {
+                            if (xhr.status === 200) {
+                                location.reload();
+                            } else {
+                                alert("Payment verification failed!");
+                            }
+                        };
+                        xhr.send(JSON.stringify(details));
+                    });
                 }
-              }).render('#paypal-button');
-    </script>
+            }).render('#paypal-button');</script>
+
     }
 </div>
