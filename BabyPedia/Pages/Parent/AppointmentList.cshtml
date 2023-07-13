@@ -106,7 +106,8 @@
                         <td class="@(!string.IsNullOrWhiteSpace(i.Prescription) ? "fw-bold text-success" : "")">@i.Payment.Status@(string.IsNullOrWhiteSpace(i.Prescription) ? "" : ", Prescribed!")</td>
                         <td>
                             <a href="/parent/currentappointment/@i.Id" class="btn btn-primary"><i class="bi bi-eye-fill"></i> View Appointment</a>
-                            <a href="/appointment/delete/@i.Id" class="btn btn-danger">Cancel Appointment</a>
+                            <a href="/appointment/delete/@i.Id" class="btn btn-danger" onclick="return confirm('Are you sure you want to cancel this appointment?')">Cancel Appointment</a>
+
                         </td>
                         
                     </tr>

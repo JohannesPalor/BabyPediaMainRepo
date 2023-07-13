@@ -65,7 +65,8 @@
                         <th>
                             <a href="/pedia/appointment/@i.Id" class="btn-success btn"><i class="bi bi-chat-fill"></i> Chat</a>
                             <a href="/prescribe/@i.Id" class="btn-success btn"><i class="bi bi-file-break-fill"></i> Prescribe</a>
-                            <a href="/pediaappointment/delete/@i.Id" class="btn btn-danger">Cancel Appointment</a>
+                            <a href="/pediaappointment/delete/@i.Id" class="btn btn-danger" onclick="return confirm('Are you sure you want to cancel this appointment?')">Cancel Appointment</a>
+
                         </th>
                         
                     </tr>
